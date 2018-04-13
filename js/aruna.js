@@ -20,39 +20,6 @@
 			//hero();
 		}));
 
-		//js carausel
-		$(".wrapper-story").owlCarousel({
-		 	loop: false,
-    		margin: 0,
-    		responsiveClass:true,
-    		responsive:{
-		        0:{
-		            items: 1,
-		            nav: false
-		        },
-		        480:{
-		            items: 2,
-		            nav: false
-		        },
-		        554:{
-		            items: 2,
-		            nav: false
-		        },
-		        768:{
-		        	items: 3,
-		        	nav: false
-		        },
-		        992:{
-		        	items: 3,
-		        	nav: false
-		        },
-		        1020:{
-		        	items: 4,
-		        	nav: false
-		        }
-		    }
-		});
-
   	});
 
 	//set ration img
