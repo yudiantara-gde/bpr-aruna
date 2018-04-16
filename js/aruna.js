@@ -20,6 +20,10 @@
 			//hero();
 		}));
 
+		$('.select').selectric({
+	      	disableOnMobile: true
+	    });
+
   	});
 
 	//set ration img

@@ -323,6 +323,7 @@
 									.open-sans(14px, 400);
 									line-height: 24px;
 									letter-spacing: 1px;
+									.textClamps(72px, 3);
 								}
 							}
 						}
@@ -486,7 +487,258 @@
 	height: auto;
 	padding-top: 50px;
 
+	.container-fluid {
+
+		.row {
+			margin: 0 -15px;
+
+			.banner {
+				float: left;
+				width: 100%;
+				height: auto;
+				padding: 0 15px;
+				margin-bottom: 30px;
+			}
+
+			.simulasi-kredit {
+				float: left;
+				width: 100%;
+				height: auto;
+				padding: 0 15px;
+
+				.wrapper-content {
+					position: relative;
+					width: 100%;
+					height: auto;
+					padding: 30px;
+					border: 1px solid #ECECEC;
+
+					h3 {
+						position: relative;
+						width: 100%;
+						height: auto;
+						margin: 0 0;
+						text-align: left;
+						color: #444444;
+						.popin-semi(20px);
+						line-height: 30px;
+						text-transform: none;
+
+						span {
+							display: inline-block;
+							width: auto;
+							height: auto;
+							position: relative;
+							.clearfix;
+
+							&:after {
+								position: absolute;
+								left: 0;
+								bottom: 0;
+								width: 100%;
+								height: 2px;
+								background: rgba(5, 67, 178, .8);
+							}
+						}
+					}
+
+					form {
+						position: relative;
+						width: 100%;
+						height: auto;
+						margin:  0 0;
+
+						.box {
+							position: relative;
+							width: 100%;
+							height: auto;
+							margin: 30px 0 0 0;
+
+							input[type="text"] {
+								width: 100%;
+								height: 40px;
+								.block;
+								background: #ffffff;
+								box-shadow: none;
+								.border-radius(0px);
+								.open-sans(16px, 400);
+								border: 1px solid #ECECEC;
+								line-height: 40px;
+								color: #444444;
+								padding: 0 15px;
+								letter-spacing: 1px;
+
+								&:focus {outline: none;}
+
+								&::-webkit-input-placeholder {
+									
+									.open-sans(16px, 400);
+									line-height: 40px;
+									color: #444444;
+									letter-spacing: 1px;
+								}
+
+								&::-moz-placeholder {
+									
+									.open-sans(16px, 400);
+									line-height: 40px;
+									color: #444444;
+									letter-spacing: 1px;
+								}
+
+								&:-ms-input-placeholder {
+									
+									.open-sans(16px, 400);
+									line-height: 40px;
+									color: #444444;
+									letter-spacing: 1px;
+								}
+								
+								&:-moz-placeholder {
+
+								  	.open-sans(16px, 400);
+									line-height: 40px;
+									color: #444444;
+									letter-spacing: 1px;
+								}
+							}
+
+							.selectric-wrapper {
+								display: inline-block;
+								position: relative;
+								width: 100%;
+								height: 40px;
+								vertical-align: top;
+
+								.selectric {
+
+									span.label {
+										.open-sans(16px, 400);
+										line-height: 40px;
+										letter-spacing: 1px;
+										text-transform: none;
+										color: #444444;
+										width: 100%;
+										height: 40px;
+										padding: 0 40px 0 10px;
+										margin: 0;
+										background: #ffffff;
+										.border-radius(0px);
+										border: 1px solid #ECECEC;
+										letter-spacing: 1px;
+										.clearfix;
+										position: relative;
+
+										&:after {
+											position: absolute;
+								            top: 0;
+								            right: 0px;
+								            width: 40px;
+								            height: 40px;
+								            background: transparent;
+								            border-top-right-radius: 0px;
+								            border-bottom-right-radius: 0px;
+								            border: 0;
+										}
+									}
+
+									.button {
+										position: absolute;
+										right: 0;
+										
+										&:after {
+											.absolute;
+											top: 50%;
+											left: 50%;
+											font: normal normal normal 14px/1 FontAwesome;
+								            font-size: 30px;
+								            line-height: 30px;
+								            margin-top: -20px;
+								            margin-left: -30px;
+								            text-rendering: auto;
+								            -webkit-font-smoothing: antialiased;
+								            -moz-osx-font-smoothing: grayscale;
+								            content: "\f107";
+								            color: #444444;
+								        }
+									}
+								}
+
+								.selectric-items {
+									background: #ffffff;
+									border: 1px solid #ECECEC;
+									border-top: 0;
+									box-shadow: none;
+									width: 100% !important;
+									.border-radius(0px);
+									top: 40px;
+
+									.selectric-scroll {
+
+										ul {
+
+											li {
+
+												background: none;
+												color: #444444;
+												.open-sans(14px, 400);
+												line-height: 30px;
+												letter-spacing: 1px;
+												text-transform: none;
+												border: 0;
+												padding: 0 15px;
+											}
+										}
+									}
+								}
+							}
+
+						}
+					}
+				}
+
+			}
+		}
+
+		.text-us {
+			position: relative;
+			width: 100%;
+			height: auto;
+			margin-top: 50px;
+
+			h3 {
+				position: relative;
+				width: 100%;
+				height: auto;
+				margin: 0 0;
+				.popin-semi(25px);
+				line-height: 35px;
+				letter-spacing: 1px;
+				text-transform: none;
+			}
+		}
+	}
+
 	@media (min-width: @screen-xl-min) {
 		padding-top: 50px;
+
+		.container-fluid {
+
+			.row {
+
+				.banner {
+					float: right;
+					width: 50%;
+				}
+
+				.simulasi-kredit {
+					width: 50%;
+				}
+			}
+
+			.text-us {
+				margin-top: 50px;
+			}
+		}
 	}
 }
