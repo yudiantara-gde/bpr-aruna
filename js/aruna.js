@@ -21,7 +21,7 @@
 		}));
 
 		$('.select').selectric({
-	      	disableOnMobile: true
+	      	disableOnMobile: false
 	    });
 
   	});

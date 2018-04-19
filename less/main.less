@@ -674,9 +674,16 @@ body {
 			.wrapper-header {
 				position: relative;
 				widows: 100%;
-				height: auto;
+				height: 80px;
+				padding: 20px 0 20px 0;
 
 				.logo {
+					position: absolute;
+					top: 20px;
+					left: 15px;
+					width: 200px;
+					height: 40px;
+					margin-top: 0;
 
 					a {
 						width: 100%;
@@ -687,9 +694,13 @@ body {
 						text-decoration: none;
 						text-transform: none;
 						color: transparent;
-						background: url('../img/logo.png') no-repeat;
+						background: url('../img/logo-footer.png') no-repeat;
 						background-size: 100% 100%;
 					}
+				}
+
+				.nav {
+					display: none;
 				}		
 			}
 
@@ -714,10 +725,9 @@ body {
 				.wrapper-header {
 					height: 115px;
 					width: 100%;
-					padding-left: 129px;
+					padding: 0 0 0 129px;
 
 					.logo {
-						.absolute;
 						top: 50%;
 						left: 15px;
 						height: 80px;
@@ -732,6 +742,7 @@ body {
 
 					.nav {
 						.relative;
+						display: block;
 						width: 100%;
 						height: 100%;
 
@@ -903,4 +914,220 @@ body {
 
 		@import "page/home.less";
 	}
+}
+
+#footer {
+	position: relative;
+	width: 100%;
+	height: auto;
+	background: #3e3e3e;
+	margin-top: 50px;
+
+	.top-footer {
+		position: relative;
+		width: 100%;
+		height: auto;
+		background: #ffffff;
+		text-align: center;
+		padding-bottom: 10px;
+
+		a {
+			display: inline-block;
+			position: relative;
+			margin: 0 0;
+			padding: 0 15px;
+			width: auto;
+			height: 39px;
+			outline: none;
+			text-decoration: none;
+			color: transparent;
+			border: 0;
+
+			img {
+				display: block;
+				width: auto;
+				height: 100%;
+			}
+
+			&:hover {
+				cursor: pointer;
+			}
+		}
+	}
+
+	.bottom-footer {
+		position: relative;
+		width: 100%;
+		height: auto;
+		padding: 30px 0;
+
+		.container-fluid {
+
+			.row {
+				margin: 0 -15px;
+
+				.bottom-about {
+					float: left;
+					width: 100%;
+					height: auto;
+					padding: 0 15px;
+					margin-bottom: 30px;
+
+					a.logo {
+						position: relative;
+						display: block;
+						width: 300px;
+						height: 60px;
+						outline: none;
+						color: transparent;
+						border: 0;
+						text-decoration: none;
+						background: url('../img/logo-footer.png') no-repeat;
+						background-size: 100% 100%;
+					}
+
+					p {
+						position: relative;
+						display: block;
+						width: 100%;
+						height: auto;
+						margin: 30px 0 0 0;
+						.open-sans(14px, 400);
+						line-height: 24px;
+						letter-spacing: 1px;
+						text-transform: none;
+						letter-spacing: 1px;
+						color: #fff;
+						text-align: justify;
+					}
+				}
+
+				.bottom-menu {
+					float: left;
+					width: 100%;
+					padding: 0 15px;
+					height: auto;
+					margin-bottom: 30px;
+
+					ul {
+						padding: 0;
+						margin: 0;
+						.clearfix;
+
+						li {
+							float: left;
+							width: 100%;
+							height: auto;
+							margin-bottom: 15px;
+							list-style: none;
+							padding-left: 25px;
+							position: relative;
+							.clearfix;
+
+							a {
+								display: inline-block;
+								width: auto;
+								height: auto;
+								color: #ffffff;
+								.open-sans(14px);
+								line-height: 24px;
+								letter-spacing: 1px;
+								text-decoration: none;
+								outline: none;
+							}
+
+							&:before {
+								position: absolute;
+								top: 5px;
+								left: 0;
+								width: 8px;
+								height: 14px;
+								background: url('../img/menu-bottom.png') no-repeat;
+								background-size: 100% 100%;
+							}
+						}
+					}
+				}
+
+				.sosmed-bottom {
+					float: left;
+					width: 100%;
+					height: auto;
+					padding: 0 15px;
+
+					ul {
+						padding: 0;
+						margin: 0;
+
+						li {
+							display: list-item;
+							list-style: none;
+							margin-bottom: 15px;
+
+							a {
+								display: inline-block;
+								width: auto;
+								height: auto;
+								margin: 0 0;
+								color: #ffffff;
+								text-decoration: none;
+								.open-sans(14px, 400);
+								line-height: 24px;
+								letter-spacing: 1px;
+								text-transform: none;
+								outline: none;
+
+								&:hover {
+									cursor: pointer;
+								}
+
+								i.fa {
+									font-size: 15px;
+									line-height: 24px;
+									margin-right: 10px;
+									position: relative;
+									top: 3px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	@media (min-width: @screen-xl-min) {
+		margin-top: 120px;
+
+		.bottom-footer {
+
+			.container-fluid {
+
+				.row {
+					margin: 0 -25px;
+
+					.bottom-about {
+						width: 50%;
+						padding: 0 25px;
+					}
+
+					.bottom-menu {
+						width: 30%;						
+						padding: 90px 25px 0 25px;
+						
+						ul {
+
+							li {width: 50%;}
+						}
+					}
+
+					.sosmed-bottom {
+						width: 20%;
+						padding: 90px 25px 0 25px;
+					}
+				}
+			}
+		}
+	}
+
 }
