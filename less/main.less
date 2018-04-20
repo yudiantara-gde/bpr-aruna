@@ -920,7 +920,7 @@ body {
 	position: relative;
 	width: 100%;
 	height: auto;
-	background: #3e3e3e;
+	background: #ffffff;
 	margin-top: 50px;
 
 	.top-footer {
@@ -935,9 +935,9 @@ body {
 			display: inline-block;
 			position: relative;
 			margin: 0 0;
-			padding: 0 15px;
+			padding: 0 5px;
 			width: auto;
-			height: 39px;
+			height: 32px;
 			outline: none;
 			text-decoration: none;
 			color: transparent;
@@ -960,6 +960,7 @@ body {
 		width: 100%;
 		height: auto;
 		padding: 30px 0;
+		background: #3e3e3e;
 
 		.container-fluid {
 
@@ -1099,6 +1100,13 @@ body {
 	@media (min-width: @screen-xl-min) {
 		margin-top: 120px;
 
+		.top-footer {
+
+			a {
+				padding: 0 15px;
+				height: 39px;
+			}
+		}
 		.bottom-footer {
 
 			.container-fluid {
