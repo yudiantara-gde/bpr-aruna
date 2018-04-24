@@ -257,7 +257,7 @@
 					width: 100%;
 					height: auto;
 					margin: 0 0 30px 0;
-					padding: 0 0 0px 0;
+					padding: 0 0 30px 0;
 					.clearfix;
 
 					p {
@@ -310,6 +310,72 @@
     							height: 10px;
 								background: url('../img/i-li.png') no-repeat;
 								background-size: 100% 100%;
+							}
+						}
+					}
+
+					.t-tabungan {
+						position: relative;
+						width: 100%;
+						height: auto;
+						border: 0;
+						.clearfix;
+
+						.t-tabungan-line {
+							float: left;
+							width: 100%;
+							height: auto;
+							margin-bottom: 20px;
+							border-left: 1px solid #ededed;
+							border-bottom: 1px solid #ededed;
+							.clearfix;
+
+							.t-waktu {
+								float: left;
+								width: 50%;
+								height: auto;
+
+								.t-line {
+									position: relative;
+									width: 100%;
+									height: auto;
+									padding: 10px 15px;
+									text-align: center;
+									background: #ffffff;
+									.open-sans(14px, 400);
+									line-height: 24px;
+									letter-spacing: 1px;
+									text-transform: none;
+									color: #444444;									
+									border-right: 1px solid #ededed;
+
+									&.t-head {font-weight: 700;}
+									&.grey {background: #ededed;}
+								}
+							}
+
+							.t-jml {
+								float: left;
+								width: 50%;
+								height: auto;
+
+								.t-line {
+									position: relative;
+									width: 100%;
+									height: auto;
+									padding: 10px 15px;
+									text-align: center;
+									background: #ffffff;
+									.open-sans(14px, 400);
+									line-height: 24px;
+									letter-spacing: 1px;
+									text-transform: none;
+									color: #444444;
+									border-right: 1px solid #ededed;
+
+									&.t-head {font-weight: 700;}
+									&.grey {background: #ededed;}
+								}
 							}
 						}
 					}
@@ -635,6 +701,74 @@
 							}
 						}
 					}
+
+					.t-detail {
+
+						p {
+							font-size: 14px;
+							line-height: 24px;
+						}
+
+						ul {
+
+							li {
+								font-size: 14px;
+								line-height: 24px;
+							}
+						}
+
+						.t-tabungan {
+							border: 0;
+
+							.t-tabungan-line {
+								width: 66.67%;
+								margin-bottom: 20px;
+								border-left: 1px solid #ededed;
+								border-bottom: 1px solid #ededed;
+								
+								.t-waktu {
+									width: 50%;
+									
+									.t-line {
+										width: 100%;									
+										border-right: 1px solid #ededed;
+
+										&.t-head {font-weight: 700;}
+										&.grey {background: #ededed;}
+									}
+								}
+
+								.t-jml {
+									width: 50%;
+									
+									.t-line {
+										width: 100%;
+										border-right: 1px solid #ededed;
+
+										&.t-head {font-weight: 700;}
+										&.grey {background: #ededed;}
+									}
+								}
+
+								&:nth-child(2n+2) {
+									width: 33.33%;
+									border-left: 0;
+									border-bottom: 1px solid #ededed;
+									
+									.t-waktu {display: none;}
+
+									.t-jml {
+										width: 100%;
+										border-right: 0;
+
+										.t-line {
+											border-right: 1px solid #ededed;
+										}
+									}
+								}
+							}
+						}
+					}
 				}
 			}
 		}
@@ -779,6 +913,92 @@
 						img {
 							width: 350px;
 							margin: 7px 15px 0px 0;
+						}
+					}
+
+					.t-detail {
+
+						p {
+							font-size: 14px;
+							line-height: 24px;
+						}
+
+						ul {
+
+							li {
+								font-size: 14px;
+								line-height: 24px;
+							}
+						}
+
+						.t-tabungan {
+
+							.t-tabungan-line {
+								width: 16.67%;
+								margin-bottom: 20px;
+								border-left: 0px solid #ededed;
+								border-bottom: 1px solid #ededed;
+
+								&.al-show {
+									width: 33.32%;
+									border-left: 1px solid #ededed;
+
+									.t-waktu {
+										display: block; 
+										width: 50%;
+										border-right: 1px solid #ededed;
+									}
+
+									.t-jml {width: 50%;}
+								}
+
+								&.l-show {
+									.t-jml {
+										
+										.t-line {
+											border-right: 1px solid #ededed;
+										}
+									}
+								}
+								
+								.t-waktu {
+									width: 50%;
+									display: none;
+									
+									.t-line {
+										width: 100%;									
+										border-right: 0px solid #ededed;
+									}
+								}
+
+								.t-jml {
+									width: 100%;
+									
+									.t-line {
+										width: 100%;
+										border-right: 0px solid #ededed;
+									}
+								}
+
+								&:nth-child(2n+2) {
+									width: 16.67%;
+									border-left: 1px solid #ededed;
+									border-bottom: 1px solid #ededed;
+									
+									.t-waktu {
+										display: none;
+									}
+
+									.t-jml {
+										width: 100%;
+										border-right: 0px solid #ededed;
+
+										.t-line {
+											border-right: 1px solid #ededed;
+										}
+									}
+								}
+							}
 						}
 					}
 				}
