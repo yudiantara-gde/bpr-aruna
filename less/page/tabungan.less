@@ -389,6 +389,255 @@
 						background: #ececec;
 					}
 				}
+
+				.laporan {
+					position: relative;
+					width: 100%;
+					height: auto;
+
+					.row {
+
+						.main-laporan {
+							position: relative;
+							width: 100%;
+							height: auto;
+							.clearfix;
+
+							.l-main-laporan {
+								float: left;
+								width: 100%;
+								height: auto;
+								margin: 0 0 30px;
+								padding: 0 15px 0 15px;
+
+								.thumb {
+									position: relative;
+									width: 100%;
+									height: 300px;
+									margin-bottom: 30px;
+
+									a {
+										display: block;
+										width: 100%;
+										height: 100%;
+										color: transparent;
+										background: #4A536B;
+										border: 0;
+										outline: none;
+										text-decoration: none;
+
+										img {
+											display: block;
+											width: 100%;
+											height: 100%;
+											object-fit: cover;
+											object-position: center;
+											opacity: 0.2;
+										}
+									}
+								}
+
+								.desc {
+									position: relative;
+									width: 100%;
+									height: auto;
+									padding-bottom: 15px;
+									border-bottom: 1px solid #ededed;
+
+									h2 {
+										position: relative;
+										width: 100%;
+										height: auto;
+										text-align: left;
+										margin: 0 0 5px 0;
+										color: #444444;
+										.popin-semi(20px);
+										line-height: 30px;
+										letter-spacing: 1px;
+										text-transform: none;
+									}
+
+									a {
+										position: relative;
+										display: block;
+										width: 100%;
+										.textClamps(72px, 3);
+										.open-sans(14px, 400);
+										line-height: 24px;
+										letter-spacing: 1px;
+										text-transform: none;
+										outline: none;
+										text-decoration: none;
+										color: #444444;
+										text-align: justify;
+									}
+								}
+
+								&:hover {
+
+									.thumb {
+
+										a {
+
+											cursor: pointer;
+
+											img {
+												-webkit-animation: fadeIn 1s;
+		    									animation: fadeIn 1s;
+												-webkit-transition: opacity 4s ease-out;
+												-moz-transition: opacity 4s ease-out;
+												-o-transition: opacity 4s ease-out;
+												transition: opacity 4s ease-out;
+												transition-delay: 4s;
+											}
+										}
+									}
+								}
+							}
+
+							&.l-tahunan {
+
+								.l-main-laporan {
+									float: left;
+									width: 100%;
+									height: auto;
+									margin: 0 0 30px;
+									padding: 0 15px 0 15px;
+
+									.thumb {
+										position: relative;
+										width: 100%;
+										height: 300px;
+										margin-bottom: 15px;
+
+										a {
+											display: block;
+											width: 100%;
+											height: 100%;
+											color: transparent;
+											background: #4A536B;
+											border: 0;
+											outline: none;
+											text-decoration: none;
+
+											img {
+												display: block;
+												width: 100%;
+												height: 100%;
+												object-fit: cover;
+												object-position: center;
+												opacity: 0.2;
+											}
+										}
+									}
+
+									.desc {
+										position: relative;
+										width: 100%;
+										height: auto;
+										padding-bottom: 15px;
+										border-bottom: 1px solid #ededed;
+
+										h2 {
+											position: relative;
+											width: 100%;
+											height: auto;
+											text-align: center;
+											margin: 0 0 0px 0;
+											color: #444444;
+											.popin-semi(14px);
+											line-height: 20px;
+											letter-spacing: 1px;
+											text-transform: uppercase;
+										}
+									}
+
+									&:hover {
+
+										.thumb {
+
+											a {
+
+												cursor: pointer;
+
+												img {
+													-webkit-animation: fadeIn 1s;
+			    									animation: fadeIn 1s;
+													-webkit-transition: opacity 4s ease-out;
+													-moz-transition: opacity 4s ease-out;
+													-o-transition: opacity 4s ease-out;
+													transition: opacity 4s ease-out;
+													transition-delay: 4s;
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+
+					.laporan-publikasi {
+						position: relative;
+						width: 100%;
+						height: auto;
+						margin: 0 0 15px 0;
+						padding: 0 0 15px 0;
+						border-bottom: 1px solid #ededed;
+
+						h2 {
+							position: relative;
+							width: 100%;
+							height: auto;
+							margin: 0 0 10px 0;
+							text-align: left;
+							.popin-semi(15px);
+							line-height: 25px;
+							letter-spacing: 1px;
+							text-transform: uppercase;
+							color: #444444;
+						}
+
+						ul {
+							padding: 0;
+							margin: 0;
+							.clearfix;
+
+							li {
+								padding: 0 0 0 40px;
+								float: left;
+								width: 100%;
+								height: 29px;
+								margin-bottom: 10px;
+
+								a {
+									.flex(flex-start, center);
+									width: 100%;
+									height: 100%;
+									color: #444444;
+									.open-sans(14px, 400);
+									line-height: 29px;
+									letter-spacing: 1px;
+									text-transform: none;
+									text-decoration: none;
+									outline: none;
+
+									&:hover {cursor: pointer;}
+								}
+
+								&:before {
+									position: absolute;
+									top: 0;
+									left: 0;
+									width: 30px;
+									height: 29px;
+									background: url('../img/i-pdf.png') no-repeat;
+									background-size: 100% 100%;
+								}
+							}
+						}
+					}
+				}
 			}
 
 			.p-widget {
@@ -769,6 +1018,35 @@
 							}
 						}
 					}
+
+					.laporan {
+
+						.row {
+
+							.main-laporan {
+								
+								.l-main-laporan {
+									width: 100%;
+									margin: 0 0 30px;
+									
+									.thumb {
+										height: 400px;
+									}
+								}
+
+								&.l-tahunan {
+
+									.l-main-laporan {
+										width: 50%;
+
+										.thumb {
+											height: 230px;
+										}
+									}
+								}
+							}
+						}
+					}
 				}
 			}
 		}
@@ -839,6 +1117,45 @@
 						img {
 							width: 250px;
 							margin: 7px 15px 0px 0;
+						}
+					}
+
+					.laporan {
+
+						.row {
+
+							.main-laporan {
+								
+								.l-main-laporan {
+									width: 50%;
+									margin: 0 0 30px 0;
+									
+									.thumb {
+										height: 350px;
+									}
+								}
+
+								&.l-tahunan {
+
+									.l-main-laporan {
+										width: 33.33%;
+
+										.thumb {
+											height: 250px;
+										}
+									}
+								}
+							}
+						}
+
+						.laporan-publikasi {
+
+							ul {
+
+								li {
+									width: 50%;
+								}
+							}
 						}
 					}
 				}
@@ -1001,6 +1318,26 @@
 							}
 						}
 					}
+
+					.laporan {
+
+						.row {
+
+							.main-laporan {
+								
+								&.l-tahunan {
+
+									.l-main-laporan {
+										width: 33.33%;
+
+										.thumb {
+											height: 250px;
+										}
+									}
+								}
+							}
+						}
+					}
 				}
 			}
 		}
@@ -1085,6 +1422,36 @@
 							line-height: 25px;
 						}
 					}
+
+					.laporan {
+
+						.row {
+
+							.main-laporan {
+
+								&.l-tahunan {
+
+									.l-main-laporan {
+										width: 33.33%;
+
+										.thumb {
+											height: 230px;
+										}
+									}
+								}
+							}
+						}
+
+						.laporan-publikasi {
+
+							ul {
+
+								li {
+									width: 33.33%;
+								}
+							}
+						}
+					}
 				}
 
 				.p-widget {
@@ -1154,6 +1521,36 @@
 							}
 						}
 					}
+
+					.laporan {
+
+						.row {
+
+							.main-laporan {
+
+								&.l-tahunan {
+
+									.l-main-laporan {
+										width: 33.33%;
+
+										.thumb {
+											height: 300px;
+										}
+									}
+								}
+							}
+						}
+
+						.laporan-publikasi {
+
+							ul {
+
+								li {
+									width: 25%;
+								}
+							}
+						}
+					}
 				}
 
 				.p-widget {
@@ -1218,6 +1615,19 @@
 											}
 										}
 									}
+								}
+							}
+						}
+					}
+
+					.laporan {
+
+						.laporan-publikasi {
+
+							ul {
+
+								li {
+									width: 20%;
 								}
 							}
 						}
