@@ -1453,6 +1453,7 @@ body {
 
 		@import "page/home.less";
 		@import "page/tabungan.less";
+		@import "page/forms.less";
 	}
 }
 
@@ -1499,135 +1500,155 @@ body {
 		position: relative;
 		width: 100%;
 		height: auto;
-		padding: 30px 0;
-		background: #3e3e3e;
+		padding: 200px 0 30px 0;		
+		background: transparent;
+		.clearfix;
 
-		.container-fluid {
+		&:before {
+			position: absolute;
+			top: 2px;
+			left: 0;
+			width: 100%;
+			height: 200px;
+			background: url('../img/footer-bg.png') no-repeat;
+			background-size: cover;
+			background-position: top center;
+			overflow: hidden;
+		}
 
-			.row {
-				margin: 0 -15px;
+		.wrapper-footer-bottom {
+			position: relative;
+			width: 100%;
+			height: auto;
+			background: url('../img/footer-bg-blue.png') repeat;
+		
+			.container-fluid {
 
-				.bottom-about {
-					float: left;
-					width: 100%;
-					height: auto;
-					padding: 0 15px;
-					margin-bottom: 30px;
+				.row {
+					margin: 0 -15px;
 
-					a.logo {
-						position: relative;
-						display: block;
-						width: 300px;
-						height: 60px;
-						outline: none;
-						color: transparent;
-						border: 0;
-						text-decoration: none;
-						background: url('../img/logo-footer.png') no-repeat;
-						background-size: 100% 100%;
-					}
-
-					p {
-						position: relative;
-						display: block;
+					.bottom-about {
+						float: left;
 						width: 100%;
 						height: auto;
-						margin: 30px 0 0 0;
-						.open-sans(14px, 400);
-						line-height: 24px;
-						letter-spacing: 1px;
-						text-transform: none;
-						letter-spacing: 1px;
-						color: #fff;
-						text-align: justify;
-					}
-				}
+						padding: 0 15px;
+						margin-bottom: 30px;
 
-				.bottom-menu {
-					float: left;
-					width: 100%;
-					padding: 0 15px;
-					height: auto;
-					margin-bottom: 30px;
+						a.logo {
+							position: relative;
+							display: block;
+							width: 300px;
+							height: 60px;
+							outline: none;
+							color: transparent;
+							border: 0;
+							text-decoration: none;
+							background: url('../img/logo-footer.png') no-repeat;
+							background-size: 100% 100%;
+						}
 
-					ul {
-						padding: 0;
-						margin: 0;
-						.clearfix;
-
-						li {
-							float: left;
+						p {
+							position: relative;
+							display: block;
 							width: 100%;
 							height: auto;
-							margin-bottom: 15px;
-							list-style: none;
-							padding-left: 25px;
-							position: relative;
+							margin: 30px 0 0 0;
+							.open-sans(14px, 400);
+							line-height: 24px;
+							letter-spacing: 1px;
+							text-transform: none;
+							letter-spacing: 1px;
+							color: #fff;
+							text-align: justify;
+						}
+					}
+
+					.bottom-menu {
+						float: left;
+						width: 100%;
+						padding: 0 15px;
+						height: auto;
+						margin-bottom: 30px;
+
+						ul {
+							padding: 0;
+							margin: 0;
 							.clearfix;
 
-							a {
-								display: inline-block;
-								width: auto;
+							li {
+								float: left;
+								width: 100%;
 								height: auto;
-								color: #ffffff;
-								.open-sans(14px);
-								line-height: 24px;
-								letter-spacing: 1px;
-								text-decoration: none;
-								outline: none;
-							}
+								margin-bottom: 15px;
+								list-style: none;
+								padding-left: 25px;
+								position: relative;
+								.clearfix;
 
-							&:before {
-								position: absolute;
-								top: 5px;
-								left: 0;
-								width: 8px;
-								height: 14px;
-								background: url('../img/menu-bottom.png') no-repeat;
-								background-size: 100% 100%;
+								a {
+									display: inline-block;
+									width: auto;
+									height: auto;
+									color: #ffffff;
+									.open-sans(14px);
+									line-height: 24px;
+									letter-spacing: 1px;
+									text-decoration: none;
+									outline: none;
+								}
+
+								&:before {
+									position: absolute;
+									top: 5px;
+									left: 0;
+									width: 8px;
+									height: 14px;
+									background: url('../img/menu-bottom.png') no-repeat;
+									background-size: 100% 100%;
+								}
 							}
 						}
 					}
-				}
 
-				.sosmed-bottom {
-					float: left;
-					width: 100%;
-					height: auto;
-					padding: 0 15px;
+					.sosmed-bottom {
+						float: left;
+						width: 100%;
+						height: auto;
+						padding: 0 15px;
 
-					ul {
-						padding: 0;
-						margin: 0;
+						ul {
+							padding: 0;
+							margin: 0;
 
-						li {
-							display: list-item;
-							list-style: none;
-							margin-bottom: 15px;
+							li {
+								display: list-item;
+								list-style: none;
+								margin-bottom: 15px;
 
-							a {
-								display: inline-block;
-								width: auto;
-								height: auto;
-								margin: 0 0;
-								color: #ffffff;
-								text-decoration: none;
-								.open-sans(14px, 400);
-								line-height: 24px;
-								letter-spacing: 1px;
-								text-transform: none;
-								outline: none;
-
-								&:hover {
-									cursor: pointer;
-								}
-
-								i.fa {
-									font-size: 15px;
+								a {
+									display: inline-block;
+									width: auto;
+									height: auto;
+									margin: 0 0;
+									color: #ffffff;
+									text-decoration: none;
+									.open-sans(14px, 400);
 									line-height: 24px;
-									margin-right: 10px;
-									position: relative;
-									top: 3px;
+									letter-spacing: 1px;
+									text-transform: none;
+									outline: none;
+
+									&:hover {
+										cursor: pointer;
+									}
+
+									i.fa {
+										font-size: 15px;
+										line-height: 24px;
+										margin-right: 10px;
+										position: relative;
+										top: 3px;
+									}
 								}
 							}
 						}
@@ -1637,7 +1658,7 @@ body {
 		}
 	}
 
-	@media (min-width: @screen-xl-min) {
+	@media (min-width: @screen-md-min) {
 		margin-top: 120px;
 
 		.top-footer {
@@ -1649,29 +1670,36 @@ body {
 		}
 		.bottom-footer {
 
-			.container-fluid {
+			&:before {
+				background: url('../img/footer-bg.png') no-repeat;
+				background-size: 100% 100%;
+				background-position: top right;
+			}
+			.wrapper-footer-bottom { 
+				.container-fluid {
 
-				.row {
-					margin: 0 -25px;
+					.row {
+						margin: 0 -25px;
 
-					.bottom-about {
-						width: 50%;
-						padding: 0 25px;
-					}
-
-					.bottom-menu {
-						width: 30%;						
-						padding: 90px 25px 0 25px;
-						
-						ul {
-
-							li {width: 50%;}
+						.bottom-about {
+							width: 50%;
+							padding: 0 25px;
 						}
-					}
 
-					.sosmed-bottom {
-						width: 20%;
-						padding: 90px 25px 0 25px;
+						.bottom-menu {
+							width: 30%;						
+							padding: 90px 25px 0 25px;
+							
+							ul {
+
+								li {width: 50%;}
+							}
+						}
+
+						.sosmed-bottom {
+							width: 20%;
+							padding: 90px 25px 0 25px;
+						}
 					}
 				}
 			}
