@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+		<meta name="author" content="yudiantara.gde@gmail.com" />
+
+		<title>BPR Aruna</title>
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.css"/>
+		<link rel="stylesheet" type="text/css" href="css/selectric.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+
+		<script type="text/javascript" scr="js/modernizr.custom.js"></script>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/jquery.throttle-debounce.min.js"></script>
+		<script type="text/javascript" src="js/ScrollMagic.js"></script>
+		<script type="text/javascript" src="js/jquery.selectric.js"></script>
+		<script type="text/javascript" src="js/aruna.js"></script>
+		<script type="text/javascript" src="js/live.js"></script>
+
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+		<script>
+	  		$( function() {
+	    		$( "#datepicker" ).datepicker();
+	  		});
+	  	</script>
+
+	</head>	
+	<body>
+		<!-- Preloader -->
+
+		<div id="preloader">
+			<div id="status"></div>
+		</div>
+
+		<div id="main">
+			<header id="header" class="relative">
+				<div class="container-fluid">
+					<div class="wrapper-header">
+						<div class="logo">
+							<a href="">BPR Aruna</a>
+						</div>	
+
+						<!-- menu desktop -->
+						<div class="nav">
+							<ul>
+								<li class="active"><a href="index.html"></a></li>
+								<li><a href="tentang-kami.html">tentang kami</a></li>
+								<li>
+									<a href="javascript:void(0);">layanan & produk</a>
+									<ul>
+										<li class="h-title"><a href="javascript:void(0)">tabungan</a></li>
+										<li><a href="">kas x-tra</a></li>
+										<li><a href="">simpan vaganza</a></li>
+										<li><a href="">simapan</a></li>
+										<li class="h-title"><a href="">kredit</a></li>
+										<li><a href="">modal kerja</a></li>
+										<li><a href="">kpr aruna</a></li>
+										<li><a href="">simulasi kredit</a></li>
+										<li class="h-title"><a href="">deposito</a></li>
+										<li><a href="">deposito aruna</a></li>
+									</ul>
+								</li>
+								<li><a href="">berita</a></li>
+								<li><a href="">laporan keuangan</a></li>
+								<li><a href="">kontak</a></li>
+							</ul>
+						</div>
+
+
+						<!-- btn click nav mobile -->
+						<div class="btn-nav-mobile">
+							<div class="wrapper-btn-nm">
+								<input id="btn-nm" class="btn-nm" type="checkbox" />
+								<label for="btn-nm">
+									<!-- menu mobile -->
+									<div class="nav-mobile" id="nav-mobile">
+										<div class="nav-mobile-wrapper">
+											<!-- home -->
+											<input type="radio" name="nav-mobile" id="beranda">
+											<label for="beranda">
+												<span class="def"><a href="">beranda</a></span>
+
+												<!-- menu dropdown -->
+												<div class="nav-mobile-dropdown">
+													<ul>
+														<li><a href="">kas x-tra</a></li>
+														<li><a href="">simpan vaganza</a></li>
+														<li><a href="">simapan</a></li>
+														<li><a href="">kredit</a></li>
+														<li><a href="">modal kerja</a></li>
+														<li><a href="">kpr aruna</a></li>
+														<li><a href="">simulasi kredit</a></li>
+														<li><a href="">deposito</a></li>
+														<li><a href="">deposito aruna</a></li>
+													</ul>
+												</div>
+											</label>
+
+											<!-- tentang kami -->
+											<input type="radio" name="nav-mobile" id="us">
+											<label for="us">
+												<span class="def"><a href="">tentang kami</a></span>
+											</label>
+
+											<!-- tabungan -->
+											<input type="radio" name="nav-mobile" id="tabungan">
+											<label for="tabungan" class="child-9">
+												<span>tabungan</span>
+
+												<!-- menu dropdown -->
+												<div class="nav-mobile-dropdown">
+													<ul>
+														<li><a href="">kas x-tra</a></li>
+														<li><a href="">simpan vaganza</a></li>
+														<li><a href="">simapan</a></li>
+														<li><a href="">kredit</a></li>
+														<li><a href="">modal kerja</a></li>
+														<li><a href="">kpr aruna</a></li>
+														<li><a href="">simulasi kredit</a></li>
+														<li><a href="">deposito</a></li>
+														<li><a href="">deposito aruna</a></li>
+													</ul>
+												</div>
+											</label>
+
+											<!-- berita -->
+											<input type="radio" name="nav-mobile" id="berita">
+											<label for="berita">
+												<span class="def"><a href="">berita</a></span>
+											</label>
+
+											<!-- laporan keuangan -->
+											<input type="radio" name="nav-mobile" id="money">
+											<label for="money">
+												<span class="def"><a href="">laporan keuangan</a></span>
+											</label>
+
+											<!-- kontak -->
+											<input type="radio" name="nav-mobile" id="kontak">
+											<label for="kontak">
+												<span class="def"><a href="">kontak</a></span>
+											</label>
+										</div>
+									</div>
+								</label>	
+							</div>						
+						</div>
+					</div>
+				</div>
+			</header>
+			<div class="wrapper-body">
+				<section class="p-title">
+					<div class="black-mask"></div>
+					<div class="container-fluid">
+						<div class="the-title">
+							<h2>Pengajuan <span>Kredit</span></h2>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque consequat lectus ut suscipit maximus. Maecenas leo tellus, pharetra id lorem quis, accumsan tempus magna. Ut congue diam augue, sit amet porttitor ex eleifend ut. Nunc in auctor velit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+							</p>
+						</div>
+					</div>
+				</section>
+				<section class="breadcumb">
+					<div class="container-fluid">
+						<ul>
+							<li><a href="">beranda</a></li>
+							<li><i class="arrow"></i></li>
+							<li><a href="">pengajuan kredit</a></li>
+						</ul>
+					</div>
+				</section>
+				<section class="pengajuan-kredit">
+					<div class="container-fluid">
+						<div class="wrapper-pengajuan-kredit">
+							<form>								
+								<div class="row">
+									<div class="form-input">
+										<label class="important">dengan ini saja mengajukan</label>
+										<select class="select">
+											<option>Pilih Kredit</option>
+											<option>Kredit 1</option>
+											<option>Kredit 2</option>
+											<option>Kredit 3</option>
+										</select>
+									</div>
+									<div class="form-input">
+										<label class="important">jumlah plafond</label>
+										<input type="text" name="" class="txt-input">
+									</div>
+									<div class="form-input full-size">
+										<label class="important">tujuan penggunaan</label>
+										<textarea class="txt-area"></textarea>
+									</div>
+									<div class="form-input full-size">
+										<p><b>Data calon debitur</b></p>
+									</div>
+									<div class="form-input">
+										<label class="important">Nama</label>
+										<input type="text" name="" class="txt-input">
+									</div>
+									<div class="form-input">
+										<label class="important">tanggal lahir</label>
+										<input type="text" class="txt-input" name="" id="datepicker">
+									</div>
+									<div class="form-input">
+										<label class="important">no ktp</label>
+										<input type="text" name="" class="txt-input">
+									</div>
+									<div class="form-input">
+										<label class="important">no npwp</label>
+										<input type="text" name="" class="txt-input">
+									</div>
+									<div class="form-input b-3">
+										<label class="important">pekerjaan</label>
+										<select class="select">
+											<option>Pilih Pekerjaan</option>
+											<option>Pegawai Swasta</option>
+											<option>Pegawai Negeri Sipil</option>
+										</select>
+									</div>
+									<div class="form-input b-3">
+										<label class="important">no hp</label>
+										<input type="text" name="" class="txt-input">
+									</div>
+									<div class="form-input b-3">
+										<label class="important">email</label>
+										<input type="text" name="" class="txt-input">
+									</div>
+									<div class="form-input full-size">
+										<label class="important">alamat ktp</label>
+										<textarea class="txt-area alamat"></textarea>
+									</div>
+									<div class="form-input full-size">
+										<p><b>jaminan</b></p>
+									</div>
+									<div class="form-input">
+										<label class="important">nama referensi marketing (jika tidak ada cukup input -)</label>
+										<input type="text" name="" class="txt-input">
+									</div>
+									<div class="form-input">
+										<label class="important">lokasi angunan</label>
+										<input type="text" name="" class="txt-input">
+									</div>
+									<div class="form-input">
+										<label class="important">jenis jaminan</label>
+										<select class="select">
+											<option>Pilih Jaminan</option>
+											<option>Rumah</option>
+											<option>Tanah</option>
+										</select>
+									</div>
+									<div class="form-input">
+										<label class="important">FOTO KTP ( MAXSIMAL UPLOAD 1MB )</label>
+										<input type="file" name="" class="t-file">
+									</div>
+									<div class="form-input full-size">
+										<input type="checkbox" name="" id="chk-box" class="chk">
+										<label for="chk-box">dengan mengisi formulir ini, anda dinyatakan telah mengajukan permohonan kredit</label>										
+									</div>
+									<div class="form-input">
+										<input type="submit" name="" class="btn-submit" value="kirim">
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+
+		<footer id="footer">
+			<div class="top-footer">
+				<a href="">
+					<img src="img/ic-ayokebank.jpg">
+				</a>
+				<a href="">
+					<img src="img/ic-lps.jpg">
+				</a>
+				<a href="">
+					<img src="img/ic-ojk.jpg">
+				</a>
+			</div>
+			<div class="bottom-footer">
+				<div class="wrapper-footer-bottom">
+					<div class="container-fluid">					
+						<div class="row">
+							<div class="bottom-about">
+								<a href="" class="logo">bpr aruna</a>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam aliquet vel odio non efficitur. Nam sit amet finibus lorem, id molestie odio. Vivamus interdum magna sit amet nisi finibus iaculis. Sed eu elementum nibh, id elementum erat.
+								</p>
+							</div>
+							<div class="bottom-menu">
+								<ul>
+									<li><a href="">Beranda</a></li>							
+									<li><a href="">Tentang kami</a></li>							
+									<li><a href="">Tabungan</a></li>							
+									<li><a href="">Kredit</a></li>
+									<li><a href="">Beranda</a></li>							
+									<li><a href="">Tentang kami</a></li>							
+									<li><a href="">Tabungan</a></li>							
+									<li><a href="">Kredit</a></li>
+								</ul>
+							</div>
+							<div class="sosmed-bottom">
+								<ul>
+									<li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i> facebook</a></li>
+									<li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i> twitter</a></li>
+									<li><a href=""><i class="fa fa-google-plus" aria-hidden="true"></i> google plus</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>	
+</html>
