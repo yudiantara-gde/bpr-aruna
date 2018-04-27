@@ -1462,7 +1462,7 @@ body {
 	width: 100%;
 	height: auto;
 	background: #ffffff;
-	margin-top: 50px;
+	margin-top: 0px;
 
 	.top-footer {
 		position: relative;
@@ -1471,6 +1471,7 @@ body {
 		background: #ffffff;
 		text-align: center;
 		padding-bottom: 10px;
+		display: none;
 
 		a {
 			display: inline-block;
@@ -1548,12 +1549,44 @@ body {
 							background-size: 100% 100%;
 						}
 
+						.logo-bottom {
+							position: relative;
+							width: 100%;
+							height: auto;
+							text-align: left;
+
+							a {
+								display: inline-block;
+								position: relative;
+								margin: 0 5px 0 0;
+								padding: 5px 5px;
+								width: auto;
+								height: auto;
+								outline: none;
+								text-decoration: none;
+								color: transparent;
+								border: 0;
+								background: #ffffff;
+								.set-border-radius(5px, 5px, 5px, 5px);
+
+								img {
+									display: block;
+									width: auto;
+									height: 32px;
+								}
+
+								&:hover {
+									cursor: pointer;
+								}
+							}
+						}
+
 						p {
 							position: relative;
 							display: block;
 							width: 100%;
 							height: auto;
-							margin: 30px 0 0 0;
+							margin: 15px 0 0 0;
 							.open-sans(14px, 400);
 							line-height: 24px;
 							letter-spacing: 1px;
@@ -1660,7 +1693,7 @@ body {
 	}
 
 	@media (min-width: @screen-md-min) {
-		margin-top: 120px;
+		margin-top: 0px;
 
 		.top-footer {
 
@@ -1689,7 +1722,7 @@ body {
 
 						.bottom-menu {
 							width: 30%;						
-							padding: 90px 25px 0 25px;
+							padding: 55px 25px 0 25px;
 							
 							ul {
 
@@ -1699,7 +1732,7 @@ body {
 
 						.sosmed-bottom {
 							width: 20%;
-							padding: 90px 25px 0 25px;
+							padding: 55px 25px 0 25px;
 						}
 					}
 				}
